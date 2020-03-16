@@ -117,10 +117,64 @@ ul {
     scrollbar-width: none;
 }
 
+/*Animations!*/
+
+.a{
+  animation-name: fadein;
+  animation-duration: 0.5s; 
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running; 
+
+}
+
+@keyframes fadein{
+
+	0%{
+		transform: translateX(10px);
+		opacity: 0%;
+	}
+
+	100%{
+		transform: translateX(0px);
+		opacity: 100%;		
+	}
+
+}
+
+.work{
+  animation-name: in;
+  animation-duration: 0.5s; 
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running; 
+
+}
+
+@keyframes in{
+
+	0%{
+		transform: translateY(-5px);
+		opacity: 0%;
+	}
+
+	100%{
+		transform: translateY(0px);
+		opacity: 100%;		
+	}
+
+}
+
+
+
 
 
 
 /*Media Queries */
+
+
 
 
 @media only screen 

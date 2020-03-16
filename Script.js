@@ -77,7 +77,7 @@ const deletef = ()=>{
 const ip = ()=>{
 	name.forEach((b,i)=>{
 		if(b.classList[1] === undefined){
-			b.classList.add(i);				
+			b.classList.add(i);		
 			b.addEventListener("click", ()=>{
 				if(b.parentElement.parentElement.children[1].children.length===0){
 					const h5 = document.createElement("h5");
