@@ -69,8 +69,9 @@ ul button img {
 	/*transform: scale(0.05,0.05);*/
 }
 
-ul li h3 ,.a {
+ul li h3, .a {
 	font-family: 'Bellota Text', cursive;
+
 }
 
 #fill{
@@ -178,10 +179,19 @@ ul li {
 		grid-template-columns: 1fr 0.4fr;
 }
 
+ul li h3{
+	font-size: 80%;
+}
+
 }
 
 
-@media only screen 
+
+
+
+
+
+/*@media only screen 
   and (max-device-width: 535px) 
 { 
 
@@ -234,7 +244,14 @@ ul{
 
 ul li {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1.5fr 1fr;
 }
 
+ul li span:nth-of-type(2){
+		justify-self:right;
+
 }
+
+
+}
+*/
