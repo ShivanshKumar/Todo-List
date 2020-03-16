@@ -1,6 +1,6 @@
 html{
 	height: 100%;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e,rgb(217, 190, 208), rgb(29, 59, 193));
+    background: linear-gradient(-45deg,rgb(241, 30, 112), rgb(152, 142, 212),rgb(17, 168, 235), rgb(142, 161, 221));
     background-size: 400% 400%;
 }
 
@@ -126,10 +126,10 @@ ul {
 /*Animations!*/
 
 html{
-  	-webkit-animation: opacity 3s ease 1, gradient 15s ease 1;
-  	-moz-animation:    opacity 3s ease 1, gradient 15s ease 1;
-  	-o-animation:      opacity 3s ease 1, gradient 15s ease 1;
-	animation: 		opacity 3s ease 1, gradient 15s ease 1;
+  	-webkit-animation: opacity 3s ease 1, gradient 10s ease 1;
+  	-moz-animation:    opacity 3s ease 1, gradient 10s ease 1;
+  	-o-animation:      opacity 3s ease 1, gradient 10s ease 1;
+	animation: 		opacity 3s ease 1, gradient 10s ease 1;
     animation-fill-mode: forwards;
 }
 
@@ -219,7 +219,7 @@ html{
     100% {
         background-position: 100% 50%;
     }
-    
+
 }
 
 
