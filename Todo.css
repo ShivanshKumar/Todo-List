@@ -112,6 +112,77 @@ ul::-webkit-scrollbar {
 }
 
 ul {
-    -ms-overflow-style: none;   Internet Explorer 10+ 
+    -ms-overflow-style: none;   
     scrollbar-width: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+body{
+	display: grid;
+	grid-template-rows: 4fr 1fr;
+}
+
+
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+html,body{
+
+}
+
+#main{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#list{
+	grid-template-columns: 1.3fr 0.5fr 0.5fr 1fr;
+	grid-template-rows:  0.1fr 1fr;
+	height: inherit;
+
+}
+
+ul, #list h4{
+	justify-self:center;
+	align-self: center;
+}
+
+#list h4 {
+	grid-column: 2/3;
+	justify-self: right;
+	align-self: end;
+}
+ul{
+	grid-column: 2/4;
+
+}
+
+#fill {
+	grid-template-columns: 1fr 0.5fr 1fr 1fr;
+}
+
+#input{
+	grid-column: 1/5;
+	justify-self:center;
+}
+
+#submit{
+	grid-column: 2/4;
+	justify-self:center;
+	grid-row: 3/5;
+	align-self: center;
+}
+#add{
+	text-align: center;
+}
+
 }
