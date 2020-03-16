@@ -93,3 +93,19 @@ const ip = ()=>{
 donef();
 deletef();
 ip();
+
+
+// Animation
+
+//Note to self: animation translate Y random 
+
+// let num = 100;
+// const circle = document.querySelectorAll('#animation div');
+// console.log(circle);
+// circle.forEach((e)=>{
+// 	console.log(e);
+// 	console.log(num);
+// 	e.style.setProperty(`right`,`${num}px`);
+// 	e.classList.add('move');
+// 	num = num*1.5;
+// })
