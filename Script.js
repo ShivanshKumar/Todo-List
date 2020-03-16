@@ -5,12 +5,14 @@ let done = document.querySelectorAll('.done');
 let deleted = document.querySelectorAll('.deleted');
 let name = document.querySelectorAll('.name');
 
+const todos = document.querySelector('.work').cloneNode(true);
+const todo2s = document.querySelector('.work').parentElement.children[1].cloneNode(true);
+
 const addTodo = ()=>{
+		const todo = todos.cloneNode(true);
+		const todo2 = todo2s.cloneNode(true);
 		const li = document.createElement("li");
-		const todo = document.querySelector('.work').cloneNode(true);
-		const todo2 = document.querySelector('.work').parentElement.children[1].cloneNode(true);
 		if(todo2.children.length>0){todo2.removeChild(todo2.children[0])};
-		console.log(todo2.children[0]);	
 		todo.children[0].childNodes[0].nodeValue = input.value;
 		li.appendChild(todo);
 		li.appendChild(todo2);
@@ -40,41 +42,51 @@ submit.addEventListener("click",addTodoClick);
 input.addEventListener("keypress",addTodoKey);
 
 const donef = ()=>{
-	done.forEach((b)=>{
-		b.addEventListener("click", ()=>{
-			const foo = b.parentElement.parentElement.parentElement.children[1]
-			if(foo.children.length>0){
-				foo.removeChild(foo.children[0]);
-			}
-			if(b.parentElement.parentElement.parentElement.children[1].children.length===0){
-				const h5 = document.createElement("h5");
-				h5.appendChild(document.createTextNode("Done"))
-				h5.className = 'a';
-				b.parentElement.parentElement.parentElement.children[1].appendChild(h5);
-			}
-		})
+	done.forEach((b,i)=>{
+		if(b.classList[1] === undefined){
+			b.classList.add(i);		
+			b.addEventListener("click", ()=>{
+				const foo = b.parentElement.parentElement.parentElement.children[1]
+				if(foo.children.length>0){
+					foo.removeChild(foo.children[0]);
+				}
+				if(b.parentElement.parentElement.parentElement.children[1].children.length===0){
+					const h5 = document.createElement("h5");
+					h5.appendChild(document.createTextNode("Done"))
+					h5.className = 'a';
+					b.parentElement.parentElement.parentElement.children[1].appendChild(h5);
+				}
+			})
+		}
 	});
 }
 
 
 const deletef = ()=>{
-	deleted.forEach((b)=>{
-		b.addEventListener("click", ()=>{
-			ul.removeChild(b.parentElement.parentElement.parentElement);
-		})
+	deleted.forEach((b,i)=>{
+		// console.log(b.className);
+		if(b.classList[1] === undefined){
+			b.classList.add(i);	
+			b.addEventListener("click", ()=>{
+				ul.removeChild(b.parentElement.parentElement.parentElement);
+			})
+		}
 	});
 }
 
 const ip = ()=>{
-	name.forEach((b)=>{
-		b.addEventListener("click", ()=>{
-			if(b.parentElement.parentElement.children[1].children.length===0){
-				const h5 = document.createElement("h5");
-				h5.appendChild(document.createTextNode("In-Progress"))
-				h5.className = 'a';
-				b.parentElement.parentElement.children[1].appendChild(h5);
-			}
-		})
+	name.forEach((b,i)=>{
+		if(b.classList[1] === undefined){
+			b.classList.add(i);				
+			b.addEventListener("click", ()=>{
+				if(b.parentElement.parentElement.children[1].children.length===0){
+					const h5 = document.createElement("h5");
+					h5.appendChild(document.createTextNode("In-Progress"))
+					h5.className = 'a';
+					b.parentElement.parentElement.children[1].appendChild(h5);
+				}
+			})
+		}	
 	});
 }
 
