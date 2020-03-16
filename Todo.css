@@ -2,23 +2,8 @@ html{
 	height: 100%;
     background: linear-gradient(-45deg, #ee7752, #e73c7e,rgb(217, 190, 208), rgb(29, 59, 193));
     background-size: 400% 400%;
-    animation: 
-    		opacity 5s ease 1,
-    		gradient 15s ease 1;
-    animation-fill-mode: forwards;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-/*    100% {
-        background-position: 0% 50%;
-    }*/
-}
 
 body{
 	display: grid;
@@ -140,63 +125,38 @@ ul {
 
 /*Animations!*/
 
+html{
+  	-webkit-animation: opacity 3s ease 1, gradient 15s ease 1;
+  	-moz-animation:    opacity 3s ease 1, gradient 15s ease 1;
+  	-o-animation:      opacity 3s ease 1, gradient 15s ease 1;
+	animation: 		opacity 3s ease 1, gradient 15s ease 1;
+    animation-fill-mode: forwards;
+}
+
+
+
 .a{
-  animation-name: fadein;
-  animation-duration: 0.5s; 
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-fill-mode: none;
-  animation-play-state: running; 
-
+  	-webkit-animation: fadein 0.5s 0s 1 none running;
+  	-moz-animation:    fadein 0.5s 0s 1 none running;
+  	-o-animation:      fadein 0.5s 0s 1 none running;
+	animation: fadein 0.5s 0s 1 none running;
 }
 
-@keyframes fadein{
-
-	0%{
-		transform: translateX(10px);
-		opacity: 0%;
-	}
-
-	100%{
-		transform: translateX(0px);
-		opacity: 100%;		
-	}
-
-}
 
 .work{
-  animation-name: in;
-  animation-duration: 0.5s; 
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-fill-mode: none;
-  animation-play-state: running; 
+  	-webkit-animation: in 0.5s 0s 1 none running;
+  	-moz-animation:    in 0.5s 0s 1 none running;
+  	-o-animation:      in 0.5s 0s 1 none running;
+	animation: in 0.5s 0s 1 none running;
 
 }
 
-@keyframes in{
-
-	0%{
-		transform: translateY(-5px);
-		opacity: 0%;
-	}
-
-	100%{
-		transform: translateY(0px);
-		opacity: 100%;		
-	}
-
-}
 
 .work:hover{
-  animation-name: color;
-  animation-timing-function: ease-in;
-  animation-duration: 0.3s; 
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: running; 
-
+  	-webkit-animation: color 0.3s ease-in 0s 1 forwards running;
+  	-moz-animation:    color 0.3s ease-in 0s 1 forwards running;
+  	-o-animation:      color 0.3s ease-in 0s 1 forwards running;
+	animation: color 0.3s ease-in 0s 1 forwards running; 
 }
 
 @keyframes color{
@@ -221,6 +181,45 @@ ul {
 		opacity: 100%
 	}
 
+}
+
+@keyframes in{
+
+	0%{
+		transform: translateY(-5px);
+		opacity: 0%;
+	}
+
+	100%{
+		transform: translateY(0px);
+		opacity: 100%;		
+	}
+
+}
+
+@keyframes fadein{
+
+	0%{
+		transform: translateX(10px);
+		opacity: 0%;
+	}
+
+	100%{
+		transform: translateX(0px);
+		opacity: 100%;		
+	}
+
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+    
 }
 
 
