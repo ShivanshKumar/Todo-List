@@ -1,4 +1,4 @@
-# Todo-List
+# ![To do](https://image.flaticon.com/icons/svg/951/951858.svg) Todo-List
 
 ## A responsive Todo List
 
@@ -21,4 +21,4 @@ for max-screen-width: 535px,670px
 
 ### Note:
 1. Although I did added webkits the gradient background animation may show irregular behaviour on some devices sometimes(Mainly in Landscape mode)<br/>
-2. I Haven't given attribute to the authors of images I have used on this website as the website is still in bulid phase, will do oce work is complete!
+2. I Haven't given attribute to the authors of images I have used on this website as the website is still in bulid phase, will do once work is complete!
