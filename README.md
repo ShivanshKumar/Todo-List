@@ -1,4 +1,4 @@
-# ![To do](https://image.flaticon.com/icons/svg/951/951858.svg) Todo-List
+# ![To do](https://image.flaticon.com/icons/svg/951/951858.svg =64x64) Todo-List
 
 ## A responsive Todo List
 
