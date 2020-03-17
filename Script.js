@@ -1,6 +1,7 @@
 const input = document.querySelector('#input');
 const submit = document.querySelector('#submit');
 const ul = document.querySelector('ul');
+
 let done = document.querySelectorAll('.done');
 let deleted = document.querySelectorAll('.deleted');
 let name = document.querySelectorAll('.name');
@@ -94,6 +95,7 @@ donef();
 deletef();
 ip();
 
+//Future Versions features
 
 // Animation
 
@@ -109,3 +111,39 @@ ip();
 // 	e.classList.add('move');
 // 	num = num*1.5;
 // })
+
+
+
+//Due Date
+
+
+
+
+// const li = document.querySelectorAll('ul li');
+// console.log(li);
+// const main = document.querySelector('#main');
+// let a = 10;
+// li.forEach((s)=>{
+// 	s.addEventListener('mouseover', ()=>{	
+// 		const div = document.createElement('div');
+// 		const h3 = document.createElement('h3');
+// 		h3.appendChild(document.createTextNode('heyyy'));
+// 		div.appendChild(h3);
+// 		div.classList.add('float');
+// 		div.style.setProperty('transform', `translateY(${a}px)`);
+// 		main.appendChild(div);
+// 	}
+// 	);
+// 	a+=20;
+// 	s.addEventListener('mouseout',()=>{
+// 		const div = document.querySelector('.float');
+// 		main.removeChild(div);
+// 	})
+// })
+
+
+
+
+
+
+
