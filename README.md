@@ -1,4 +1,4 @@
-# <img src = "https://image.flaticon.com/icons/svg/951/951858.svg" width = "64" height = "64"> Todo-List
+# <img src = "https://image.flaticon.com/icons/svg/951/951858.svg" width = "32" height = "32"> Todo-List
 
 ## A responsive Todo List
 
